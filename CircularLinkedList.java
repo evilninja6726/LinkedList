@@ -18,6 +18,8 @@ public class CircularLinkedList {
         int choice = scanner.nextInt();
         switch (choice) {
             case 1:
+                if (head==null)
+                    System.out.println("Empty List");
                 CircularNode curr = head.next;
                 System.out.print(head.data + " ");
                 while (curr != head) {
@@ -26,12 +28,16 @@ public class CircularLinkedList {
                 }
                 break;
             case 2:
+                if (head==null)
+                    System.out.println("Empty List");
                 System.out.print(head.data + " ");
                 for (CircularNode i = head.next; i != head; i = i.next) {
                     System.out.print(i.data + " ");
                 }
                 break;
             case 3:
+                if (head==null)
+                    System.out.println("Empty List");
                 CircularNode curr2 = head;
                 do {
                     System.out.print(curr2.data + " ");
