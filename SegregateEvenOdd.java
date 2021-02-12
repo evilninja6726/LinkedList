@@ -39,7 +39,7 @@ public class SegregateEvenOdd {
             }
             curr = curr.next;
         }
-        if (oE == null || eE == null)
+        if (oS == null || eS == null)
             return head;
         eE.next = oS;
         oE.next = null;
