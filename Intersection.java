@@ -49,7 +49,7 @@ public class Intersection {
         curr2 = smallList;
         for (int i = 0; i < abs; i++)
             curr1 = curr1.next;
-        while (curr1 != null || curr2 != null) {
+        while (curr1 != null && curr2 != null) {
             if (curr1 == curr2)
                 return curr1.data;
             curr1 = curr1.next;
